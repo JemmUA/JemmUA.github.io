@@ -1,0 +1,13 @@
+:root {
+  --bs-primary: rgb(100, 255, 255);
+}
+
+.logo_best {
+  width: 70px;
+  /*height: 70px;*/
+  margin: 10px;
+}
+
+.carousel-text-color {
+  color: var(--bs-primary);
+}
