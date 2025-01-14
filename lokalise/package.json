@@ -1,0 +1,14 @@
+{
+  "name": "hillel_fullstack_homework_17",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tailwindcss -i ./assets/src/input.css -o ./assets/src/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

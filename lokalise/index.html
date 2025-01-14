@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <script src="https://cdn.tailwindcss.com"></script>-->
+  <link rel="stylesheet" href="assets/src/output.css">
+</head>
+<body>
+  <header class="flex max-sm:flex-wrap sm:flex-nowrap justify-between items-center border-b-2 py-2">
+    <div class="flex flex-wrap gap-4">
+      <img class="h-auto 2xl:w-48 xl:w-42 lg:w-36 md:w-30 sm:w-24 max-sm:w-22 p-2" src="assets/images/lokalize+g.svg" title="Lokalize logo" alt="Lokalize logo">
+      <button class="sm:hidden hover:bg-color__main__light active:bg-color__main__dark">
+          <svg class="w-10 h-10 text-gray-800 dark:text-white" aria-hidden="true"
+               xmlns="http://www.w3.org/2000/svg"
+               width="10" height="10" fill="none" viewBox="0 0 25 25">
+            <path stroke="gray" stroke-linecap="round" stroke-width="2"
+                  d="M5 7h14M5 12h14M5 17h14"/>
+          </svg>
+      </button>
+      <nav class="hidden sm:block">
+        <ul class="flex justify-around py-2 gap-x-3 text__nav">
+          <li class="link__highlight">Product</li>
+          <li class="link__highlight">Features</li>
+          <li class="link__highlight">Pricing</li>
+          <li class="link__highlight">Case&nbsp;studies</li>
+          <li class="link__highlight">Resources</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="flex flex-wrap justify-around">
+      <button class="text-black px-4 py-2 hover:bg-gray-400 border-2 text__button m-2">Log in</button>
+      <button class="text-white px-4 py-2 bg-color__main hover:bg-color__main__dark text__button m-2">Try it free</button>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="grid justify-items-center md:flex md:content-center p__big__block">
+      <div class="block__inside order-2 md:order-1 items-center">
+        <div class="text__title__biggest">
+          Accelerate localization from code to delivery
+        </div>
+        <div class="text__content__medium py__main__text">
+          A localization and translation management platform for agile teams.
+          Embrace automation, workflow transparency,
+          and fast project delivery.
+        </div>
+        <div class="flex flex-wrap gap-x-1 pb-2 md:pb-4">
+          <button class="text-white px-4 py-2 bg-color__main hover:bg-color__main__dark text__button m-2">Try it free</button>
+          <button class="text-black px-4 py-2 hover:bg-gray-400 border-2 text__button m-2">Log in</button>
+        </div>
+        <div class="text__bottom">
+          Try all features for 14 days · No credit card required
+        </div>
+      </div>
+      <div class="block__inside order-1 md:order-2 ">
+<!--      <div class="block__inside order-1 md:order-2 grayscale hover:grayscale-0">-->
+        <img src="assets/images/code-delivery.png" title="Code - delivery" alt="Code - delivery">
+      </div>
+    </div>
+
+    <div class="bg-color__main__light p__big__block">
+      <div class="text-center text__title__bigger">
+        The preferred localization<br>tool of 1500+ companies
+      </div>
+      <div class="flex flex-wrap justify-around gap-5">
+        <img class="logo__preferred" src="assets/images/logo_specialized.svg" title="Logo Specialized" alt="Logo Specialized">
+        <img class="logo__preferred" src="assets/images/logo_virgin.svg" title="Logo Virgin" alt="Logo Virgin">
+        <img class="logo__preferred" src="assets/images/logo_tidal.svg" title="Logo Tidal" alt="Logo Tidal">
+        <img class="logo__preferred" src="assets/images/logo_revolut.svg" title="Logo Revolut" alt="Logo Revolut">
+        <img class="logo__preferred" src="assets/images/logo_yelp.svg" title="Logo Yelp" alt="Logo Yelp">
+        <img class="logo__preferred" src="assets/images/logo_daimler.svg" title="Logo Daimler" alt="Logo Daimler">
+      </div>
+    </div>
+
+    <div class="grid justify-items-center md:flex md:items-center p__big__block">
+      <div class="block__inside order-2 md:order-1 items-center md:pr-32">
+        <div class="text__title__biggest">
+          Control the localization process
+        </div>
+        <div class="text__content__medium py__main__text">
+          Collaborate with your team in a single workspace. Add and assign <span class="underline">tasks</span>, track progress,
+          and enjoy a seamless localization workflow where you know who is doing what and when.
+        </div>
+        <div class="text__content__medium font-bold link__highlight">
+          Start now
+        </div>
+      </div>
+      <div class="block__inside order-1 md:order-2 ">
+        <img src="assets/images/project_app.png" title="Control the localization process" alt="Control the localization process">
+      </div>
+    </div>
+
+    <div class="grid justify-items-center md:flex md:items-center p__big__block">
+      <div class="block__inside">
+        <img src="assets/images/icons_set.png" title="Shorten time to market" alt="Shorten time to market">
+      </div>
+      <div class="block__inside items-center md:pl-16">
+        <div class="text__title__biggest">
+          Shorten time to market
+        </div>
+        <div class="text__content__medium py__main__text">
+          Localize your product in parallel with the development cycle. Use the <span class="underline">Adobe XD</span>,
+          <span class="underline">Figma</span>, and <span class="underline">Sketch</span> plugins to start working
+          on translations as soon as the product design is ready. No more idle waiting.
+        </div>
+        <div class="text__content__medium font-bold link__highlight">
+          Start now
+        </div>
+      </div>
+    </div>
+
+    <div class="grid justify-items-center md:flex md:items-center p__big__block">
+      <div class="block__inside order-2 md:order-1 items-center md:pr-32">
+        <div class="text__title__biggest">
+          Ensure quality
+        </div>
+        <div class="text__content__medium py__main__text">
+          Use built-in tools — e.g. <span class="underline">translation memory</span>, machine translation,
+          and <span class="underline">QA checks</span> — to enhance the quality and cohesion of translations. Add product
+          <span class="underline">screenshots</span> for context and use the <span class="underline">in-context editors</span>
+          for instant previews.
+        </div>
+        <div class="text__content__medium font-bold link__highlight">
+          Start now
+        </div>
+      </div>
+      <div class="block__inside order-1 md:order-2 ">
+        <img src="assets/images/ensure_quality.png" title="Ensure quality" alt="Ensure quality">
+      </div>
+    </div>
+
+    <div class="grid justify-items-center md:flex md:items-center p__big__block">
+      <div class="block__inside">
+        <img src="assets/images/less_work_for_developers.png" title="Shorten time to market" alt="Shorten time to market">
+      </div>
+      <div class="block__inside items-center md:pl-16">
+        <div class="text__title__biggest">
+          Less work for developers
+        </div>
+        <div class="text__content__medium py__main__text">
+          Eliminate the hassle of localization and let developers get back to their main tasks. Save hours with the
+          powerful <span class="underline">API</span>, CLI, mobile SDKs, and integrations with  GitHub, Bitbucket, JIRA, and more.
+          Localize your product in parallel with the development cycle. Use the <span class="underline">Adobe XD</span>,
+          <span class="underline">Figma</span>, and <span class="underline">Sketch</span> plugins to start working
+          on translations as soon as the product design is ready. No more idle waiting.
+        </div>
+        <div class="text__content__medium font-bold link__highlight">
+          Start now
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-color__second__light p__big__block">
+      <div class="text-center text__title__bigger">
+        What can you localize with Lokalise?
+      </div>
+
+      <div class="grid grid-cols-3 gap-5">
+        <div class="flex flex-col items-center">
+          <div>
+            <img src="assets/images/web_apps.png" title="Web apps" alt="Web apps">
+          </div>
+          <div class="text__block__title">Web apps</div>
+          <div class="text__block__lokalize__content">
+            Any kind of web apps — backend, frontend, single page,
+            blogs — you name it.
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div>
+            <img src="assets/images/mobile_apps.png" title="Web apps" alt="Web apps">
+          </div>
+          <div class="text__block__title">Mobile apps</div>
+          <div class="text__block__lokalize__content">
+            Upload any mobile platform language files. Embed Lokalise iOS SDK
+            or Lokalise Android SDK if you prefer.
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div>
+            <img src="assets/images/games.png" title="Web apps" alt="Web apps">
+          </div>
+          <div class="text__block__title">Games</div>
+          <div class="text__block__lokalize__content">
+            Our cloud software is trusted by many leading game developers around the world.
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div>
+            <img src="assets/images/docs.png" title="Web apps" alt="Web apps">
+          </div>
+          <div class="text__block__title">Documents</div>
+          <div class="text__block__lokalize__content">
+            Upload your DOCX and static HTML files.
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div>
+            <img src="assets/images/marketing_e-mail.png" title="Web apps" alt="Web apps">
+          </div>
+          <div class="text__block__title">Marketing e-mails</div>
+          <div class="text__block__lokalize__content">
+            Integrate with Salesforce Marketing Cloud (coming soon) or translate static e-mails.
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div>
+            <img src="assets/images/iot.png" title="Web apps" alt="Web apps">
+          </div>
+          <div class="text__block__title">IoT</div>
+          <div class="text__block__lokalize__content">We support most popular localization file formats.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bg-white p__big__block">
+
+      <div class="text-center text__title__bigger">
+        Boost your localization team’s productivity tenfold
+      </div>
+
+      <div class="grid grid-cols-3 gap-5">
+
+        <div class="flex flex-col items-center">
+          <div>
+            <img src="assets/images/managers.png" title="Managers" alt="Managers">
+          </div>
+          <div class="text__block__title__left">Managers</div>
+          <div class="text__block__boost__content py__main__text">
+            Update existing and launch new features and products while simultaneously localizing them in multiple languages.
+            Streamline your team's workflow, maximize productivity, and speed up expansion to other markets.
+          </div>
+          <div class="text__block__boost__content link__highlight underline">
+            Learn more
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div>
+            <img src="assets/images/developers.png" title="Developers" alt="Developers">
+          </div>
+          <div class="text__block__title__left">Developers</div>
+          <div class="text__block__boost__content py__main__text">
+            Set up an integration with your code repository or your own custom SDK via Lokalise's
+            <span class="underline">powerful API</span>. Do that once,
+            and every time you make changes in the code, they'll be automatically imported to Lokalise for translation.
+          </div>
+          <div class="text__block__boost__content link__highlight underline">
+            Learn more
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div>
+            <img src="assets/images/translators.png" title="Translators" alt="Translators">
+          </div>
+          <div class="text__block__title__left">Translators</div>
+          <div class="text__block__boost__content py__main__text">
+            Eliminate double-work and neverending revisions with visual context (screenshots) and live previews.
+            Improve the quality and speed of your translations with built-in CAT tools, like autocomplete,
+            inline machine translation, and translation memory.
+          </div>
+          <div class="text__block__boost__content link__highlight underline">
+            Learn more
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-color__additional p__big__block">
+      <div class="flex gap-10">
+        <div>
+          <div class="text__block__revolut__content">
+            “Lokalise has turned a task we were dreading into an absolute pleasure. Great platform, intuitive UX, powerful API.
+            The automatic text recognition for screenshots has been a lifesaver, and over-the-air updates are the icing on the cake.”
+          </div>
+          <div class="text__block__revolut__signature">
+            Edward Cooper, Chief Mobile Officer
+          </div>
+          <div class="logo__revolut">
+            <img src="assets/images/logo_revolut.svg" title="Logo Revolut" alt="Logo Revolut">
+          </div>
+        </div>
+
+          <div class="w-[310px]">
+            <img src="assets/images/revolut.png" title="Photo Edward Cooper" alt="Photo Edward Cooper">
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="bg-color__second p__big__block">
+
+      <div class="flex flex-wrap justify-around items-center gap-8">
+        <div class="w-1/5">
+          <img src="assets/images/loved_translation.png" title="Logo Translation" alt="Logo Translation">
+        </div>
+        <div class="text__block__translation sm:pr-16 sm:border-r-2 border-black">
+          The most-loved translation<br> management software
+        </div>
+
+        <div class="">
+          <img src="assets/images/g2.svg" title="Logo G2" alt="Logo G2">
+        </div>
+
+        <div class="">
+          <img src="assets/images/capterra.svg" title="Logo Capterra" alt="Logo Capterra">
+        </div>
+      </div>
+    </div>
+
+    <div class="p__big__block bg-white flex flex-col items-center">
+        <div class="text-center text__tools__title sm:order-1  order-2">
+          Integrate Lokalise<br> with your work tools
+        </div>
+        <div class="text-center text__tools__content sm:order-2 order-3">
+          Automate processes, eliminate routine tasks,
+          and track progress with ease.
+        </div>
+        <div class="sm:order-3 order-1 ">
+          <img src="assets/images/your_work_tool.png" title="Image Specialized" alt="Image Specialized">
+        </div>
+        <button class="w-1/4 text-white px-4 py-2 bg-color__main hover:bg-color__main__dark text__button m-2 max-sm:px-0 order-4">
+          See all integrations
+        </button>
+    </div>
+
+    <div class="bg-color__main__light p__big__block flex flex-col items-center">
+      <div class="text-center text__title__bigger">
+        Localization made easy.
+      </div>
+      <div class="text-center text__title__bigger">
+        Why wait?
+      </div>
+      <button class="w-1/3 sm:w-1/6 text-white px-4 py-2 bg-black hover:bg-color__main__dark text__button m-2 max-sm:px-0 order-4">
+        Try it free
+      </button>
+    </div>
+
+    <div class="bg-color__extra p__big__block ">
+
+      <div class="grid grid-cols-5 gap-10">
+
+        <div>
+          <div class="text__block__studies__title">
+            Case Studies
+          </div>
+          <div>
+            <img src="assets/images/case_studies.png" title="Case studies" alt="Case studies">
+          </div>
+          <div class="w-1/3">
+            <img src="assets/images/logo_specialized.svg" title="Logo Specialized" alt="Logo Specialized">
+          </div>
+
+          <div class="text__block__studies__content__small py__main__text">
+            Riding towards global success with a 100% teammate enthusiasm
+          </div>
+          <div class="text__content__medium font-bold link__highlight">
+            Read more
+          </div>
+        </div>
+
+        <div>
+          <div class="text__block__studies__title__small">
+            Product
+          </div>
+          <div class="text__block__studies__content__small">
+            <div>For developers</div>
+            <div>For managers</div>
+            <div>For translators</div>
+            <div>For designers</div>
+            <div>Integrations</div>
+            <div>Security</div>
+            <div>Pricing</div>
+            <div>Automations</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="text__block__studies__title__small">
+            Support
+          </div>
+          <div class="text__block__studies__content__small">
+            <div>Contact</div>
+            <div>Documentation</div>
+            <div>Status</div>
+            <div>Product Updates</div>
+            <div>CLI Tool</div>
+            <div>API Reference</div>
+            <div>iOS and Android SDK</div>
+            <div>Supported File Formats</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="text__block__studies__title__small">
+            Company
+          </div>
+          <div class="text__block__studies__content__small">
+            <div>About</div>
+            <div>Blog</div>
+            <div>Careers | We`re Hiring</div>
+            <div>Case Studies</div>
+            <div>Media Kit</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="text__block__studies__title__small">
+            Legal
+          </div>
+          <div class="text__block__studies__content__small">
+            <div>Terms of Service</div>
+            <div>Privacy Policy</div>
+            <div>Cookie Policy</div>
+            <div>Privacy Shield</div>
+            <div>DPA</div>
+            <div>List of Sub-processors</div>
+            <div>Candidates Privacy Notice</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+<footer class="bg-color__extra ">
+  <div class="flex justify-between max-sm:flex-wrap gap-4 border-t border-black p-4">
+    <div class="flex flex-row max-sm:flex-wrap max-sm:items-center max-sm:justify-start justify-center gap-2">
+      <img class="w-1/5" src="assets/images/lokalize.svg" title="Logo Lokalise" alt="Logo Lokalise">
+      <div class="flex flex-col">
+        <div class="text__footer">
+          Localization workflow for your web and mobile
+        </div>
+        <div class="text__footer">
+          apps, games and digital content.
+        </div>
+      </div>
+    </div>
+    <div class="flex-col">
+      <div class="text__footer">
+        ©2001-2020
+      </div>
+      <div class="text__footer">
+        All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
+
+
