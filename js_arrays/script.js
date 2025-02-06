@@ -106,18 +106,11 @@ users.forEach(user => {
 console.log(`Користувач ${richestUser.name} має найвищий баланс: ${richestUser.balance}`);
 
 // #4 Вивести користувачів з повторюючимися іменами
-const userNames = users.map(user => user.name.split(" ")[0]);
-
-console.log("Імена користувачів, що повторюються (forEach):");
-userNames.forEach((name, index, arrayUsers) => {
-  if (arrayUsers.indexOf(name) !== index) {
-    console.log(name);
-  }
+const matchedNameUsers = [];
+users.filter((user, index, array) => {
+  const twinkArr = array.filter((u, i) =>  u.name.split(" ")[0] === user.name.split(" ")[0] && i !== index);
+  if (twinkArr.length !== 0) {matchedNameUsers.push(twinkArr[0]);}
 });
-
-console.log("Імена користувачів, що повторюються (filter):");
-const twins = userNames
-  .filter((userName, index, array) => array.indexOf(userName) !== index);
-twins.forEach(twin => console.log(twin));
-
-
+console.log("Користувачі, у яких повторюються імена:")
+console.log(matchedNameUsers.forEach(userObj => console.log(userObj)));
+console.log("довжина масиву",matchedNameUsers.length);
