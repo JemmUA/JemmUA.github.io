@@ -48,6 +48,7 @@ console.log(createDomElement('p', 'This paragraph has been added to the specifie
  */
 
 function setLocalStorageInfo(key, value, timeout) {
+  timeout = timeout * 1000; // переводимо мілісекунди в секунди
   if (key && value) {
     if (typeof value !== "string") {
       value = JSON.stringify(value);
