@@ -29,14 +29,14 @@ hamburger.addTopping(Hamburger.TOPPING_MAYO);
 
 // запитаємо скільки там калорій
 console.log('Calories: ', hamburger.calculate ());
-
-// скільки коштує
+//
+// // скільки коштує
 console.log('Price: ', hamburger.calculatePrice());
-
-// я тут передумав і вирішив додати ще приправу
+//
+// // я тут передумав і вирішив додати ще приправу
 hamburger.addTopping(Hamburger.TOPPING_SAUCE);
-
-// А скільки тепер коштує?
+//
+// // А скільки тепер коштує?
 console.log('Price with sauce: ', hamburger.calculatePrice());
 
-console.log("Bon appetit and come again! :)))")
+console.log("Смачного! :)))")
