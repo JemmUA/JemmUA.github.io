@@ -1,4 +1,4 @@
-console.log('#9. JavaScript homework example file')
+console.log('#9. JavaScript homework example file');
 
 /*
  * #1
@@ -43,7 +43,7 @@ function trackMousePosition() {
   });
 }
 
-console.log(trackMousePosition())
+console.log(trackMousePosition());
 
 /*
  * #3
@@ -75,8 +75,8 @@ function setupEventDelegation(selector) {
       if (event.target.matches('#testList>li')) {
         console.log(event.target.innerText);
       }
-    }))
-};
+    }));
+}
 
 setupEventDelegation('#testList');
 
