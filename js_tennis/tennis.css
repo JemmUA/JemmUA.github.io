@@ -1,0 +1,94 @@
+:root {
+    --color-ball: tomato;
+    --color-grass: #003300;
+    --color-markup: lightgray;
+    --color-leftBat: blue;
+    --color-rightBat: yellow;
+    --color-pause: brown;
+    --color-count: grey;
+}
+
+* {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background-color: var(--color-markup);
+}
+
+.lawn {
+    width: 100vw;
+    height:100vh;
+    margin: 1vw;
+    /*overflow: hidden;*/
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-grass);
+    z-index: -1000;
+}
+
+.ball {
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+    background-color: var(--color-ball);
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    z-index: 500;
+}
+
+.batLeft {
+    position: absolute;
+    width: 2vw;
+    height: 10vw;
+    background-color: var(--color-leftBat);
+    top: 50vh;
+    left: 3vw;
+    z-index: 100;
+}
+
+.batRight {
+    position: absolute;
+    width: 2vw;
+    height: 10vw;
+    background-color: var(--color-rightBat);
+    top: 50vh;
+    right: 3vw;
+    z-index: 101;
+}
+
+.net{
+    width: 1vw;
+    height: 100vh;
+    z-index: 0;
+    background-color: var(--color-markup);
+}
+
+.paused {
+    position: absolute;
+    top: 40vh;
+    display: initial;
+    color: var(--color-pause);
+    font-size: 11vw;
+    font-weight: bold;
+    z-index: 1500;
+}
+
+.unpaused {
+    display: none;
+}
+
+#leftCount, #rightCount {
+    font-size: 20vw;
+    color: var(--color-count);
+    opacity: 30%;
+}
