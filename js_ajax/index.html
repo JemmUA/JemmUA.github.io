@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HW31. Weather. Post.</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Домашня робота 31.1. Асинхронні операції та робота з API в JavaScript.</h1>
+
+    <div id="main__container">
+      <div id="weather__container">
+        <h2>Погода</h2>
+        <label for="inputCity" class="weather">Місто</label>
+        <input type="text" id="inputCity" name="" placeholder="місто англійською" class="weather" required/>
+        <div id="city__error" class="hidden weather__error">Введіть коректну назву міста англійською</div>
+        <button id="weather" type="submit" class="weather">Погода</button>
+        <br>
+        <div id="city" class="weather">Місто</div>
+        <div id="temperature" class="weather">Температура</div>
+        <div id="pressure" class="weather">Тиск</div>
+        <div id="description" class="weather">Опис</div>
+        <div id="humidity" class="weather">Вологість</div>
+        <div id="speed" class="weather">Швидкість вітру</div>
+        <div id="deg" class="weather">Напрям вітру</div>
+        <img id="search__image" class="hidden" alt="searching image" src="images/earth_transp_backgr.gif">
+        <img class="hidden" id="weather__icon" src="" alt="weather icon" title="weather">
+      </div>
+
+      <div>
+        <h2>Пошук поста</h2>
+        <label for="inputPostId" class="post">Введіть ID поста</label>
+        <input type="text" id="inputPostId" name="" placeholder="id (1-100)" class="post" required/>
+        <div id="post__error" class="hidden post__error">Введіть коректний ID поста</div>
+        <button id="findPostButton" type="submit" class="post">Пошук</button>
+        <br><br>
+        <div id="postByID" class="post hidden">Пост ID</div>
+        <div id="postTitle" class="post__title hidden">Заголовок</div>
+        <div id="postBody" class="post__body hidden">Пост</div>
+        <button id="searchForComments" type="submit" class="post__comments hidden">Пошук коментарів</button>
+        <div id="comments" class="post__comments hidden">Коментарі</div>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+body {
+    background: #3377ff;
+}
+
+#main__container {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+#weather__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#search__image {
+    width: 5vw;
+    height: 5vw;
+}
+
+.weather, .post, .weather__error, .post__error {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.weather, .post {
+    color: black;
+}
+
+.weather__error, .post__error {
+    color: red;
+}
+
+#weather__icon {
+    width: 15vw;
+    height: 15vh;
+
+    /*&:hover {*/
+    /*    width: 30vw;*/
+    /*    height: 30vh;*/
+    /*}*/
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+.post__body {
+    background-color: #dddddd;
+}
+
+.post__title {
+    background-color: #ffffbb;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.3rem 0 0.3rem 0;
+}
+
+.post__comments {
+    background-color: #77bbdd;
+    margin: 0.3rem 0 0.3rem 0;
+
+}
+
