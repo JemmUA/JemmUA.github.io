@@ -1,0 +1,38 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3377ff;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #0000ff;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ddddff;
+}
+
+.menu__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.menu__item {
+    margin: 0.5vw;
+}
+
+#ts {
+    color: white;
+    font-size: 5rem;
+}
